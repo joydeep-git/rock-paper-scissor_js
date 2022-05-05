@@ -37,7 +37,7 @@ function getResult() {
         result = 'It is Draw!'
     }
     if (computerChoice === 'rock' && userChoice === 'paper'){
-        result = 'you won!'
+        result = 'you Won!'
         score = score +1
     }
     if (computerChoice === 'rock' && userChoice === 'scissor'){
