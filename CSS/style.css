@@ -1,0 +1,42 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+div{
+    padding: 3rem;
+    background-color:aquamarine;
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h2{
+    margin-right: auto;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: rgb(255, 140, 8);
+}
+h2 span{
+    text-align: right;
+    color: rgb(247, 0, 255);
+}
+
+button{
+    padding: 0.5rem 1rem;
+    margin: 3rem 1rem;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 2px;
+}
