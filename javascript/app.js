@@ -7,6 +7,8 @@ let userChoice
 let computerChoice
 let result
 
+let score = 0;
+
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id
     userChoiceDisplay.innerHTML = userChoice
@@ -36,18 +38,21 @@ function getResult() {
     }
     if (computerChoice === 'rock' && userChoice === 'paper'){
         result = 'you won!'
+        score = score +1
     }
     if (computerChoice === 'rock' && userChoice === 'scissor'){
         result = 'you Lost!'
     }
     if (computerChoice === 'paper' && userChoice === 'scissor'){
         result = 'you Won!'
+        score = score +1
     }
     if (computerChoice === 'paper' && userChoice === 'rock'){
         result = 'you Lost!'
     }
     if (computerChoice === 'scissor' && userChoice === 'rock'){
         result = 'you Won!'
+        score = score +1
     }
     if (computerChoice === 'scissor' && userChoice === 'paper'){
         result = 'you Lost!'
