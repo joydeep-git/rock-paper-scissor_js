@@ -9,7 +9,7 @@ html{
 div{
     margin-top: 10%;
     padding: 3rem;
-    background-color:aquamarine;
+    background-color: #c8c8c8;
     position: relative;
     width: 60%;
     margin-left: auto;
@@ -23,21 +23,25 @@ h2{
     text-align: left;
     justify-content: space-between;
     font-size: 2rem;
-    color: rgb(255, 140, 8);
+    color: rgb(0, 0, 0);
 }
 h2 span{
     text-align: right;
-    color: rgb(247, 0, 255);
+    color: rgb(26, 71, 156);
 }
 
 button{
     padding: 0.5rem 1rem;
     margin: 3rem 1rem 1rem 1rem;
     border-radius: 20px;
-    background-color: #000;
+    background-color: #212121;
     color: #fff;
     font-weight: 600;
     font-size: 1.5rem;
     cursor: pointer;
     transition: 2px;
+}
+button:hover{
+    color: rgb(40, 35, 35);
+    background-color: whitesmoke;
 }
