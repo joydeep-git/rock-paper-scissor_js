@@ -6,43 +6,60 @@
 html{
     font-size: 16px;
 }
-div{
-    margin-top: 10%;
-    padding: 3rem;
-    background-color: #c8c8c8;
-    position: relative;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+body{
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 25px;}
-h2{
-    margin-right: auto;
-    text-align: left;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    color: rgb(0, 0, 0);
+    height: 100vh;
 }
-h2 span{
-    justify-content: space-around;
+h3{
+    background-color: aquamarine;
+    margin: 0 auto;
+    font-size: 2rem;
+    color: black;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    position: relative;
+}
+
+table tr td{
+    font-size: 1.2rem;
+    text-align: left;
+    width: 17rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.data{
     text-align: right;
-    color: rgb(26, 71, 156);
+}
+.comp{
+    color: red;
+}
+table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 button{
-    padding: 0.5rem 1rem;
-    margin: 3rem 1rem 1rem 1rem;
-    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 15px;
     background-color: #212121;
     color: #fff;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
-    transition: 2px;
+    border: 0px solid;
 }
 button:hover{
-    color: rgb(40, 35, 35);
-    background-color: whitesmoke;
+    justify-content: space-around;
+    padding: 4px 9px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
 }
