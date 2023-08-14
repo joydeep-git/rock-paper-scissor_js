@@ -4,7 +4,7 @@ const resultDisplay = document.getElementById('result')
 const possibleChoices = document.querySelectorAll('button')
 const score = document.getElementById('userScore');
 const opponentScore = document.getElementById('computerScore');
-
+const resetButton = document.querySelector(".reset");
 
 let userChoice;
 let computerChoice;
@@ -14,8 +14,8 @@ let userScore = 0;
 let computerScore = 0;
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-    userChoice = e.target.id
-    userChoiceDisplay.innerHTML = userChoice
+    userChoice = e.target.id;
+    userChoiceDisplay.innerHTML = userChoice;
 
     generateComputerChoice()
     getResult()
@@ -68,3 +68,16 @@ function getResult() {
     score.innerHTML = userScore;
     opponentScore.innerHTML = computerScore;
 }
+
+resetButton.addEventListener("click", () => {
+    computerChoiceDisplay.innerHTML = "";
+    userChoiceDisplay.innerHTML = "";
+    resultDisplay.innerHTML = "";
+    possibleChoices.forEach(possibleChoice => possibleChoice.disabled = false);
+    score.innerHTML = '0';
+    opponentScore.innerHTML = '0';
+
+    userScore = 0;
+    computerScore = 0;
+});
+
