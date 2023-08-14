@@ -74,8 +74,8 @@ resetButton.addEventListener("click", () => {
     userChoiceDisplay.innerHTML = "";
     resultDisplay.innerHTML = "";
     possibleChoices.forEach(possibleChoice => possibleChoice.disabled = false);
-    score.innerHTML = '0';
-    opponentScore.innerHTML = '0';
+    score.innerHTML = '';
+    opponentScore.innerHTML = '';
 
     userScore = 0;
     computerScore = 0;
